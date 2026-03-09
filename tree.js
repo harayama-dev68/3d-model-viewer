@@ -1,12 +1,12 @@
-import * as THREE from "https://unpkg.com/three@0.166.1/build/three.module.js";
-import { OrbitControls } from "https://unpkg.com/three@0.166.1/examples/jsm/controls/OrbitControls.js";
-import { GLTFLoader } from "https://unpkg.com/three@0.166.1/examples/jsm/loaders/GLTFLoader.js";
-import { OBJLoader } from "https://unpkg.com/three@0.166.1/examples/jsm/loaders/OBJLoader.js";
-import { FBXLoader } from "https://unpkg.com/three@0.166.1/examples/jsm/loaders/FBXLoader.js";
-import { STLLoader } from "https://unpkg.com/three@0.166.1/examples/jsm/loaders/STLLoader.js";
-import { PLYLoader } from "https://unpkg.com/three@0.166.1/examples/jsm/loaders/PLYLoader.js";
-import { ThreeMFLoader } from "https://unpkg.com/three@0.166.1/examples/jsm/loaders/3MFLoader.js";
-import { ColladaLoader } from "https://unpkg.com/three@0.166.1/examples/jsm/loaders/ColladaLoader.js";
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
+import { FBXLoader } from "three/addons/loaders/FBXLoader.js";
+import { STLLoader } from "three/addons/loaders/STLLoader.js";
+import { PLYLoader } from "three/addons/loaders/PLYLoader.js";
+import { ThreeMFLoader } from "three/addons/loaders/3MFLoader.js";
+import { ColladaLoader } from "three/addons/loaders/ColladaLoader.js";
 
 const canvas = document.getElementById("viewer");
 const dropZone = document.getElementById("drop-zone");
