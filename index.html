@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Model Viewer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.166.1/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.166.1/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <section id="drop-zone" aria-label="3Dモデルのドロップ領域">
+        <h1>Simple 3D Model Viewer</h1>
+        <p>3Dモデルファイルをここにドラッグ&ドロップしてください</p>
+        <p class="hint">対応形式: glTF/glb, obj, fbx, stl, ply, 3mf, dae</p>
+      </section>
+
+      <section id="viewer-section">
+        <canvas id="viewer"></canvas>
+        <div id="status">モデル未読み込み</div>
+      </section>
+    </main>
+
+    <script type="module" src="tree.js"></script>
+  </body>
+</html>
